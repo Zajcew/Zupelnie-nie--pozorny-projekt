@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">XbikeChalange</string>
+    <string name="start">Start</string>
+    <string name="wouldGps">Would you like to turn on GPS?</string>
+</resources>
