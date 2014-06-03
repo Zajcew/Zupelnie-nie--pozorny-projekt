@@ -20,7 +20,6 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="100px"
             android:textStyle="italic"
-            android:text="@+id/label"
             android:textSize="60px">
     </TextView>
 </RelativeLayout>

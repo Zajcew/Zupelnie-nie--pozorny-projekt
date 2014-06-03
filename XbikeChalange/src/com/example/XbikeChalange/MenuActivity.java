@@ -17,10 +17,9 @@ public class MenuActivity extends ListActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.menu_layout);
-        String[] values = new String[]{"Ride", "cos tam", "cos tam 2"};
+        String[] values = new String[]{"ride", "cos tam", "cos tam 2"};
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
-                R.layout.menuitem_layout, R.id.label, values);
+        ListItemAdapter adapter = new ListItemAdapter(this, values);
         setListAdapter(adapter);
     }
 
@@ -33,7 +32,7 @@ public class MenuActivity extends ListActivity {
                 startActivity(ride);
                 break;
             case 1:
-                Toast.makeText(getApplicationContext(),"Czas nie nadszedł jeszcze",Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), "Czas nie nadszedł jeszcze", Toast.LENGTH_LONG).show();
                 break;
 
         }
